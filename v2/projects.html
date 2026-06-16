@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Raj Desai — Backend systems, cloud platforms, ML pipelines, and enterprise SaaS products." />
+  <title>Projects — Raj Desai</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body class="page-projects">
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-rd">RD</span>
+        <span class="logo-name">Raj Desai</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+        <li><a href="projects.html" class="nav-link active" data-page="projects">Projects</a></li>
+        <li><a href="experience.html" class="nav-link" data-page="experience">Experience</a></li>
+        <li><a href="skills.html" class="nav-link" data-page="skills">Skills</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PROJECTS HERO -->
+  <section class="projects-hero">
+    <div class="container">
+      <div class="projects-hero-inner">
+        <div>
+          <span class="projects-count">05 Selected Projects</span>
+          <h1 class="projects-headline">Work that speaks for itself.</h1>
+        </div>
+        <div class="projects-hero-right">
+          <p>A curated selection of systems, platforms, and tools I've architected, led, or significantly contributed to across fintech, cloud, data, and SaaS domains.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <div class="projects-filter">
+    <div class="container">
+      <div class="filter-inner">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="cloud">Cloud / DevOps</button>
+        <button class="filter-btn" data-filter="data">Data / ML</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS LIST -->
+  <div class="projects-list">
+
+    <!-- PROJECT 01 — FinTech Payment Platform -->
+    <article class="project-block" id="fintech-platform" data-category="backend" data-reveal>
+      <div class="project-visual visual-fintech">
+        <div class="grid-overlay"></div>
+        <div class="project-visual-inner">
+          <div class="project-visual-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <span class="project-visual-label">Payment Engine</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-index">01</div>
+        <div class="project-category">FinTech / Backend Engineering</div>
+        <h2 class="project-title">Real-Time Payment Processing Engine</h2>
+        <p class="project-desc">
+          Architected and led development of a high-throughput payment processing system capable of handling 50,000+ transactions per second. Built on event-driven microservices with strong consistency guarantees, full idempotency, and PCI-DSS compliance.
+        </p>
+        <div class="project-outcome">
+          <div class="project-outcome-label">Measurable Impact</div>
+          <div class="project-outcome-text">$2M+ daily transaction volume · 99.99% uptime SLA · Sub-100ms P99 latency</div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Go</span>
+          <span class="tech-tag">Apache Kafka</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">Redis</span>
+          <span class="tech-tag">Kubernetes</span>
+          <span class="tech-tag">AWS</span>
+          <span class="tech-tag">gRPC</span>
+        </div>
+        <a href="#" class="project-link">
+          Case Study
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJECT 02 — ML Pipeline -->
+    <article class="project-block" id="ml-pipeline" data-category="data" data-reveal>
+      <div class="project-visual visual-ml">
+        <div class="grid-overlay"></div>
+        <div class="project-visual-inner">
+          <div class="project-visual-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+            </svg>
+            <span class="project-visual-label">MLOps Platform</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-index">02</div>
+        <div class="project-category">Data Engineering / ML Infrastructure</div>
+        <h2 class="project-title">End-to-End MLOps Deployment Platform</h2>
+        <p class="project-desc">
+          Designed and implemented a full MLOps platform enabling data scientists to go from model training to production serving in under 2 hours. The platform handles model versioning, A/B testing, feature store management, and real-time inference at scale.
+        </p>
+        <div class="project-outcome">
+          <div class="project-outcome-label">Measurable Impact</div>
+          <div class="project-outcome-text">Deployment time: 3 weeks → 2 hours · 50M+ daily predictions · 40% cost reduction</div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Kubeflow</span>
+          <span class="tech-tag">MLflow</span>
+          <span class="tech-tag">Apache Airflow</span>
+          <span class="tech-tag">GCP Vertex AI</span>
+          <span class="tech-tag">Feast</span>
+          <span class="tech-tag">Ray Serve</span>
+        </div>
+        <a href="#" class="project-link">
+          Case Study
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJECT 03 — Enterprise SaaS -->
+    <article class="project-block" id="saas-platform" data-category="fullstack" data-reveal>
+      <div class="project-visual visual-saas">
+        <div class="grid-overlay"></div>
+        <div class="project-visual-inner">
+          <div class="project-visual-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+            </svg>
+            <span class="project-visual-label">SaaS Platform</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-index">03</div>
+        <div class="project-category">Full-Stack / SaaS Product Engineering</div>
+        <h2 class="project-title">Multi-Tenant Enterprise SaaS Platform</h2>
+        <p class="project-desc">
+          Led engineering for a B2B SaaS platform from zero to production, supporting 200+ enterprise clients. Implemented multi-tenancy isolation, role-based access control, audit logging, SSO integration, and a flexible billing engine with usage-based pricing.
+        </p>
+        <div class="project-outcome">
+          <div class="project-outcome-label">Measurable Impact</div>
+          <div class="project-outcome-text">$1M ARR at launch · 200+ enterprise clients · 99.95% uptime over 18 months</div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">Stripe</span>
+          <span class="tech-tag">Auth0</span>
+          <span class="tech-tag">AWS ECS</span>
+        </div>
+        <a href="#" class="project-link">
+          Case Study
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJECT 04 — Cloud Infrastructure -->
+    <article class="project-block" id="cloud-infra" data-category="cloud" data-reveal>
+      <div class="project-visual visual-infra">
+        <div class="grid-overlay"></div>
+        <div class="project-visual-inner">
+          <div class="project-visual-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <path d="M17 18a5 5 0 0 0-10 0"/><line x1="12" y1="9" x2="12" y2="2"/><polyline points="9 5 12 2 15 5"/>
+            </svg>
+            <span class="project-visual-label">Cloud Infrastructure</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-index">04</div>
+        <div class="project-category">Cloud Engineering / DevOps</div>
+        <h2 class="project-title">Zero-Downtime Cloud Migration & Infrastructure</h2>
+        <p class="project-desc">
+          Planned and executed a complete cloud migration of a monolithic legacy system to a microservices architecture on AWS, with zero downtime. Implemented infrastructure-as-code, blue-green deployments, and a comprehensive observability stack.
+        </p>
+        <div class="project-outcome">
+          <div class="project-outcome-label">Measurable Impact</div>
+          <div class="project-outcome-text">Zero downtime migration · 65% infrastructure cost reduction · MTTR reduced by 80%</div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Terraform</span>
+          <span class="tech-tag">AWS</span>
+          <span class="tech-tag">Kubernetes</span>
+          <span class="tech-tag">Helm</span>
+          <span class="tech-tag">Prometheus</span>
+          <span class="tech-tag">Grafana</span>
+          <span class="tech-tag">Datadog</span>
+        </div>
+        <a href="#" class="project-link">
+          Case Study
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJECT 05 — Internal Developer Platform -->
+    <article class="project-block" id="developer-platform" data-category="backend" data-reveal>
+      <div class="project-visual visual-api">
+        <div class="grid-overlay"></div>
+        <div class="project-visual-inner">
+          <div class="project-visual-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+            <span class="project-visual-label">Developer Platform</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-index">05</div>
+        <div class="project-category">Platform Engineering / Developer Experience</div>
+        <h2 class="project-title">Internal Developer Platform (IDP)</h2>
+        <p class="project-desc">
+          Built an internal developer platform used by 120+ engineers to provision infrastructure, deploy services, and manage secrets — all through a unified self-service interface. Reduced onboarding time for new engineers from 2 weeks to 2 days.
+        </p>
+        <div class="project-outcome">
+          <div class="project-outcome-label">Measurable Impact</div>
+          <div class="project-outcome-text">120+ engineers onboarded · 2-week → 2-day onboarding · 30% faster deployment velocity</div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Go</span>
+          <span class="tech-tag">Backstage</span>
+          <span class="tech-tag">ArgoCD</span>
+          <span class="tech-tag">Vault</span>
+          <span class="tech-tag">GitHub Actions</span>
+          <span class="tech-tag">Kubernetes</span>
+        </div>
+        <a href="#" class="project-link">
+          Case Study
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+    </article>
+
+  </div><!-- /projects-list -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand"><span class="logo-rd">RD</span><span>Raj Desai</span></div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copy">© 2024 Raj Desai. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/three.min.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

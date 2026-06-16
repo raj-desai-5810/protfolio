@@ -1,0 +1,347 @@
+/* ─── EXPERIENCE PAGE STYLES ─── */
+
+.experience-hero {
+  padding: calc(var(--nav-h) + 80px) 0 80px;
+  border-bottom: 1px solid var(--gray-border);
+  position: relative;
+  z-index: 10;
+}
+
+.exp-headline {
+  font-size: clamp(44px, 6vw, 80px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.0;
+  color: var(--charcoal);
+  max-width: 700px;
+}
+
+.exp-subtext {
+  margin-top: 28px;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--gray-mid);
+  max-width: 520px;
+}
+
+/* ─── TIMELINE ─── */
+.timeline-section {
+  padding: 100px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.timeline-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gray-light);
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.timeline-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--gray-border);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 0;
+}
+
+.timeline-entry {
+  display: grid;
+  grid-template-columns: 200px 1px 1fr;
+  gap: 0 40px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.timeline-entry:last-child .timeline-line {
+  display: none;
+}
+
+.timeline-date {
+  text-align: right;
+  padding: 0 0 80px;
+}
+
+.timeline-year {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--charcoal);
+  margin-bottom: 4px;
+}
+
+.timeline-duration {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--gray-light);
+  letter-spacing: 0.03em;
+}
+
+.timeline-connector {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2.5px solid var(--black);
+  flex-shrink: 0;
+  margin-top: 4px;
+  z-index: 2;
+  transition: background 0.2s;
+}
+
+.timeline-entry:hover .timeline-dot {
+  background: var(--black);
+}
+
+.timeline-line {
+  flex: 1;
+  width: 1px;
+  background: var(--gray-border);
+  margin-top: 8px;
+}
+
+.timeline-content {
+  padding: 0 0 80px;
+}
+
+.timeline-company {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-light);
+  margin-bottom: 8px;
+}
+
+.timeline-role {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--charcoal);
+  margin-bottom: 16px;
+}
+
+.timeline-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-light);
+  margin-bottom: 20px;
+}
+
+.timeline-location svg {
+  width: 13px;
+  height: 13px;
+  stroke: var(--gray-light);
+}
+
+.timeline-body {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--gray-mid);
+  margin-bottom: 20px;
+}
+
+.timeline-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.timeline-bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray-dark);
+}
+
+.timeline-bullet::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--black);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tl-tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 4px 12px;
+  border: 1px solid var(--gray-border);
+  border-radius: 100px;
+  color: var(--gray-dark);
+  background: var(--white);
+}
+
+/* ─── EDUCATION ─── */
+.education-section {
+  padding: 60px 0 100px;
+  border-top: 1px solid var(--gray-border);
+  position: relative;
+  z-index: 10;
+}
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--gray-border);
+  margin-top: 60px;
+  border: 1px solid var(--gray-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.edu-card {
+  background: var(--white);
+  padding: 40px 36px;
+}
+
+.edu-degree {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+
+.edu-school {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-mid);
+  margin-bottom: 6px;
+}
+
+.edu-year {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--gray-light);
+}
+
+/* ─── CERTIFICATIONS ─── */
+.certs-section {
+  padding: 0 0 100px;
+  position: relative;
+  z-index: 10;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.cert-card {
+  border: 1.5px solid var(--gray-border);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.cert-card:hover {
+  border-color: var(--black);
+  box-shadow: var(--shadow-sm);
+}
+
+.cert-issuer {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-light);
+  margin-bottom: 10px;
+}
+
+.cert-name {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+
+.cert-year {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-light);
+}
+
+/* ─── RESPONSIVE EXPERIENCE ─── */
+@media (max-width: 1024px) {
+  .timeline-entry {
+    grid-template-columns: 140px 1px 1fr;
+    gap: 0 28px;
+  }
+  .certs-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .experience-hero { padding: calc(var(--nav-h) + 48px) 0 60px; }
+
+  .timeline-entry {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-left: 24px;
+    border-left: 1px solid var(--gray-border);
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .timeline-date {
+    text-align: left;
+    padding-bottom: 8px;
+  }
+
+  .timeline-connector { display: none; }
+
+  .timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2px solid var(--black);
+  }
+
+  .timeline-content { padding: 0 0 48px; }
+
+  .edu-grid { grid-template-columns: 1fr; }
+  .certs-grid { grid-template-columns: 1fr; }
+}

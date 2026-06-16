@@ -1,0 +1,249 @@
+/* ─── SKILLS PAGE STYLES ─── */
+
+.skills-hero {
+  padding: calc(var(--nav-h) + 80px) 0 80px;
+  border-bottom: 1px solid var(--gray-border);
+  position: relative;
+  z-index: 10;
+}
+
+.skills-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+}
+
+.skills-headline {
+  font-size: clamp(44px, 6vw, 80px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.0;
+  color: var(--charcoal);
+}
+
+.skills-hero p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--gray-mid);
+}
+
+/* ─── COMPETENCY OVERVIEW ─── */
+.competency-overview {
+  padding: 80px 0;
+  background: var(--charcoal);
+  position: relative;
+  z-index: 10;
+}
+
+.competency-overview .section-tag { color: rgba(255,255,255,0.4); }
+.competency-overview .section-title { color: var(--white); }
+.competency-overview .section-header { margin-bottom: 56px; }
+
+.competency-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.competency-item {
+  background: rgba(255,255,255,0.04);
+  padding: 36px 28px;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: background 0.25s;
+}
+
+.competency-item:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.comp-level {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 12px;
+}
+
+.comp-area {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.comp-count {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.4);
+}
+
+/* ─── SKILL CATEGORIES ─── */
+.skills-categories {
+  padding: 100px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.category-section {
+  margin-bottom: 80px;
+}
+
+.category-header {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 48px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--gray-border);
+}
+
+.category-num {
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  color: var(--gray-subtle);
+  line-height: 1;
+}
+
+.category-name {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+
+.category-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--gray-mid);
+}
+
+.skills-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 220px 1fr 100px;
+  gap: 32px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--gray-subtle);
+  transition: background 0.2s;
+}
+
+.skill-row:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: -12px;
+  margin-right: -12px;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+}
+
+.skill-name {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--charcoal);
+}
+
+.skill-bar-wrap {
+  height: 3px;
+  background: var(--gray-subtle);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  height: 100%;
+  background: var(--black);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s var(--ease-out);
+}
+
+.skill-bar.animated {
+  transform: scaleX(1);
+}
+
+.skill-proficiency {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--gray-light);
+  text-align: right;
+}
+
+/* ─── TOOLS GRID ─── */
+.tools-section {
+  padding: 0 0 100px;
+  position: relative;
+  z-index: 10;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1px;
+  background: var(--gray-border);
+  border: 1px solid var(--gray-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-top: 48px;
+}
+
+.tool-item {
+  background: var(--white);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+  cursor: default;
+}
+
+.tool-item:hover {
+  background: var(--black);
+}
+
+.tool-name {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--charcoal);
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.tool-item:hover .tool-name { color: var(--white); }
+
+.tool-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* ─── RESPONSIVE SKILLS ─── */
+@media (max-width: 1024px) {
+  .skills-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .competency-grid { grid-template-columns: repeat(2, 1fr); }
+  .category-header { grid-template-columns: 1fr; gap: 16px; }
+  .tools-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .skills-hero { padding: calc(var(--nav-h) + 48px) 0 60px; }
+  .competency-grid { grid-template-columns: repeat(2, 1fr); }
+  .skill-row { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .skill-proficiency { display: none; }
+  .tools-grid { grid-template-columns: repeat(3, 1fr); }
+}

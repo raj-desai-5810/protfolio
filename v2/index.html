@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Raj Desai — Senior Software Engineer. Building scalable systems and elegant solutions for complex engineering challenges." />
+  <title>Raj Desai — Software Engineer</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="page-home">
+
+  <!-- 3D Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-rd">RD</span>
+        <span class="logo-name">Raj Desai</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link active" data-page="home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+        <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
+        <li><a href="experience.html" class="nav-link" data-page="experience">Experience</a></li>
+        <li><a href="skills.html" class="nav-link" data-page="skills">Skills</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-label">Software Engineer</div>
+        <h1 class="hero-title">
+          <span class="title-line">Building</span>
+          <span class="title-line accent-line">Systems</span>
+          <span class="title-line">That Scale.</span>
+        </h1>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-tag">Open to Opportunities</div>
+          <p class="hero-intro">
+            Senior Software Engineer with 7+ years of experience architecting robust backend systems, leading cross-functional teams, and delivering enterprise-grade solutions at scale.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">7+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">40+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">12</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE SECTION -->
+  <section class="expertise" id="expertise">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Capabilities</span>
+        <h2 class="section-title">Engineering Expertise</h2>
+      </div>
+      <div class="expertise-grid">
+        <div class="expertise-card" data-reveal>
+          <div class="expertise-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+            </svg>
+          </div>
+          <h3>Backend Architecture</h3>
+          <p>Designing distributed systems, microservices architectures, and high-throughput APIs that handle millions of requests reliably.</p>
+        </div>
+        <div class="expertise-card" data-reveal>
+          <div class="expertise-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+            </svg>
+          </div>
+          <h3>Cloud & DevOps</h3>
+          <p>Building CI/CD pipelines, container orchestration, and cloud-native infrastructure across AWS, GCP, and Azure environments.</p>
+        </div>
+        <div class="expertise-card" data-reveal>
+          <div class="expertise-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
+            </svg>
+          </div>
+          <h3>Data Engineering</h3>
+          <p>Architecting data pipelines, stream processing systems, and analytics platforms that transform raw data into actionable insight.</p>
+        </div>
+        <div class="expertise-card" data-reveal>
+          <div class="expertise-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3>Team Leadership</h3>
+          <p>Leading engineering teams, mentoring developers, driving technical strategy, and aligning engineering work with business objectives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK SECTION -->
+  <section class="selected-work" id="selected-work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Selected Work</h2>
+        <a href="projects.html" class="section-link">All Projects →</a>
+      </div>
+      <div class="work-list">
+        <a href="projects.html#fintech-platform" class="work-item" data-reveal>
+          <div class="work-meta">
+            <span class="work-year">2024</span>
+            <span class="work-category">FinTech / Backend</span>
+          </div>
+          <div class="work-content">
+            <h3 class="work-title">FinTech Payment Platform</h3>
+            <p class="work-desc">Architected a real-time payment processing engine handling $2M+ daily transactions with 99.99% uptime and sub-100ms latency.</p>
+          </div>
+          <div class="work-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </a>
+        <a href="projects.html#ml-pipeline" class="work-item" data-reveal>
+          <div class="work-meta">
+            <span class="work-year">2023</span>
+            <span class="work-category">ML / Data Engineering</span>
+          </div>
+          <div class="work-content">
+            <h3 class="work-title">ML Model Deployment Pipeline</h3>
+            <p class="work-desc">Built an end-to-end MLOps platform reducing model deployment time from weeks to hours, serving 50M+ predictions daily.</p>
+          </div>
+          <div class="work-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </a>
+        <a href="projects.html#saas-platform" class="work-item" data-reveal>
+          <div class="work-meta">
+            <span class="work-year">2023</span>
+            <span class="work-category">SaaS / Full-Stack</span>
+          </div>
+          <div class="work-content">
+            <h3 class="work-title">Enterprise SaaS Platform</h3>
+            <p class="work-desc">Led development of a multi-tenant SaaS platform from zero to $1M ARR, supporting 200+ enterprise clients.</p>
+          </div>
+          <div class="work-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRIEF BIO SECTION -->
+  <section class="brief-bio" id="brief-bio">
+    <div class="container">
+      <div class="bio-grid">
+        <div class="bio-left" data-reveal>
+          <span class="section-tag">About Me</span>
+          <h2 class="bio-title">Engineering solutions that matter.</h2>
+        </div>
+        <div class="bio-right" data-reveal>
+          <p>I'm a software engineer who believes great engineering is inseparable from great problem-solving. I focus on building systems that are not just technically sound, but genuinely impactful.</p>
+          <p>Currently based in Mumbai, India. I collaborate with teams globally, bringing both technical depth and product thinking to every engagement.</p>
+          <a href="about.html" class="btn btn-outline">Full Profile →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-rd">RD</span>
+          <span>Raj Desai</span>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copy">© 2024 Raj Desai. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/three.min.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
