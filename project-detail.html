@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Project details — Raj Desai portfolio. Deep-dive into the engineering, challenges, and technologies behind each project." />
+  <title>Project Details — Raj Desai</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/project-detail.css" />
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<div id="page-transition">
+  <div class="pt-panel"></div><div class="pt-panel"></div><div class="pt-panel"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" data-transition>RD</a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link" data-transition>Home</a></li>
+      <li><a href="about.html"      class="nav-link" data-transition>About</a></li>
+      <li><a href="projects.html"   class="nav-link" data-transition>Projects</a></li>
+      <li><a href="skills.html"     class="nav-link" data-transition>Skills</a></li>
+      <li><a href="experience.html" class="nav-link" data-transition>Experience</a></li>
+      <li><a href="contact.html"    class="nav-link nav-cta" data-transition>Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="index.html"      class="nav-link" data-transition>Home</a>
+  <a href="about.html"      class="nav-link" data-transition>About</a>
+  <a href="projects.html"   class="nav-link" data-transition>Projects</a>
+  <a href="skills.html"     class="nav-link" data-transition>Skills</a>
+  <a href="experience.html" class="nav-link" data-transition>Experience</a>
+  <a href="contact.html"    class="nav-link" data-transition>Contact</a>
+</div>
+
+<!-- PROJECT DETAIL HERO -->
+<section id="project-detail-hero">
+  <div class="container">
+    <a href="projects.html" class="pdetail-back" data-transition id="back-to-projects">
+      ← Back to Projects
+    </a>
+    <div class="pdetail-category reveal">Full-Stack Development</div>
+    <h1 class="pdetail-title reveal delay-1">NexaShop</h1>
+    <div class="pdetail-meta reveal delay-2">
+      <div class="pdetail-meta-item">
+        <div class="pdetail-meta-label">Year</div>
+        <div class="pdetail-meta-value" data-pdetail="year">2024</div>
+      </div>
+      <div class="pdetail-meta-item">
+        <div class="pdetail-meta-label">Duration</div>
+        <div class="pdetail-meta-value" data-pdetail="duration">4 months</div>
+      </div>
+      <div class="pdetail-meta-item">
+        <div class="pdetail-meta-label">Role</div>
+        <div class="pdetail-meta-value" data-pdetail="role">Lead Developer</div>
+      </div>
+    </div>
+    <div class="pdetail-hero-img reveal delay-3">
+      <img src="assets/images/project1.png" alt="Project hero" loading="eager" />
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT BODY -->
+<section id="project-detail-body">
+  <div class="container">
+    <div class="pdetail-body-grid">
+
+      <!-- Main content -->
+      <div class="pdetail-main">
+        <h2 class="pdetail-section-title reveal">Project Overview</h2>
+        <p class="pdetail-text pdetail-overview reveal delay-1">Loading…</p>
+
+        <h2 class="pdetail-section-title reveal">Challenges &amp; Solutions</h2>
+        <div class="pdetail-challenges reveal delay-1">
+          <ul><!-- populated by JS --></ul>
+        </div>
+
+        <h2 class="pdetail-section-title reveal">Gallery</h2>
+        <div class="pdetail-gallery reveal delay-1">
+          <!-- populated by JS -->
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="pdetail-sidebar">
+        <div class="pdetail-sidebar-card reveal">
+          <div class="pdetail-sidebar-label">Tech Stack</div>
+          <div class="pdetail-tech-list"><!-- populated by JS --></div>
+        </div>
+        <div class="pdetail-sidebar-card reveal delay-1">
+          <div class="pdetail-sidebar-label">Links</div>
+          <div class="pdetail-links">
+            <a href="#" class="pdetail-link-btn" id="pdetail-live">
+              🔗 View Live Demo
+            </a>
+            <a href="#" class="pdetail-link-btn" id="pdetail-github">
+              ⚡ View Source Code
+            </a>
+          </div>
+        </div>
+        <div class="pdetail-sidebar-card reveal delay-2" style="text-align:center">
+          <div class="pdetail-sidebar-label" style="margin-bottom:20px">Interested in working together?</div>
+          <a href="contact.html" class="btn btn-primary" data-transition style="width:100%;justify-content:center" id="pdetail-contact-btn">
+            Let's Talk
+          </a>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- Next project teaser -->
+<section style="padding:80px 0;background:var(--bg-secondary);border-top:1px solid var(--border-subtle);">
+  <div class="container" style="text-align:center">
+    <span class="section-label" style="justify-content:center;margin-bottom:16px;">More Work</span>
+    <h2 class="reveal" style="font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;margin-bottom:32px;letter-spacing:-0.025em;">
+      Explore other <span class="gradient-text">projects</span>
+    </h2>
+    <a href="projects.html" class="btn btn-outline" data-transition id="explore-projects-btn">
+      View All Projects
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-logo">RD</span>
+    <p class="footer-copy">© 2024 Raj Desai. Crafted with passion & precision.</p>
+    <div class="footer-links">
+      <a href="about.html" data-transition>About</a>
+      <a href="projects.html" data-transition>Projects</a>
+      <a href="contact.html" data-transition>Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+<script src="js/project-detail.js"></script>
+</body>
+</html>

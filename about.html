@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Raj Desai — Learn about my journey, values, and passion for building world-class digital experiences." />
+  <title>About — Raj Desai</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<div id="page-transition">
+  <div class="pt-panel"></div>
+  <div class="pt-panel"></div>
+  <div class="pt-panel"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" data-transition>RD</a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link" data-transition>Home</a></li>
+      <li><a href="about.html"      class="nav-link" data-transition>About</a></li>
+      <li><a href="projects.html"   class="nav-link" data-transition>Projects</a></li>
+      <li><a href="skills.html"     class="nav-link" data-transition>Skills</a></li>
+      <li><a href="experience.html" class="nav-link" data-transition>Experience</a></li>
+      <li><a href="contact.html"    class="nav-link nav-cta" data-transition>Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="index.html"      class="nav-link" data-transition>Home</a>
+  <a href="about.html"      class="nav-link" data-transition>About</a>
+  <a href="projects.html"   class="nav-link" data-transition>Projects</a>
+  <a href="skills.html"     class="nav-link" data-transition>Skills</a>
+  <a href="experience.html" class="nav-link" data-transition>Experience</a>
+  <a href="contact.html"    class="nav-link" data-transition>Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label page-hero-label reveal">About Me</span>
+    <h1 class="reveal delay-1">
+      The developer behind<br/><span class="gradient-text">the code</span>
+    </h1>
+    <p class="reveal delay-2">A curious mind, relentless builder, and firm believer that great software changes lives.</p>
+  </div>
+</section>
+
+<!-- STORY SECTIONS -->
+<section id="about-story">
+  <div class="container">
+
+    <!-- Row 1: Image left, text right -->
+    <div class="story-row">
+      <div class="story-img-wrap reveal-left">
+        <div class="story-img-accent"></div>
+        <img src="assets/images/raj-avatar.png" alt="Raj Desai" loading="lazy" />
+      </div>
+      <div class="story-text reveal-right">
+        <span class="section-label">The Beginning</span>
+        <h2>Curiosity sparked<br/>a <span class="gradient-text">lifelong passion</span></h2>
+        <p>
+          Growing up in Ahmedabad, I dismantled every electronic device I could get my hands on — 
+          not out of destructiveness, but out of an insatiable need to understand how things worked. 
+          That same instinct carried me to computer science, where I discovered that software was the 
+          ultimate building material: infinitely malleable, globally scalable, and limited only by imagination.
+        </p>
+        <p>
+          My first "Hello World" at 14 set off a chain reaction. By 16, I was building school 
+          management tools. By 18, I was freelancing for local businesses. The journey from curious 
+          kid to professional developer felt less like a career choice and more like following gravity.
+        </p>
+      </div>
+    </div>
+
+    <!-- Row 2: Text left, image right -->
+    <div class="story-row reverse">
+      <div class="story-img-wrap reveal-right">
+        <img src="assets/images/project2.png" alt="Working environment" loading="lazy" style="filter:brightness(0.7) saturate(1.3)" />
+      </div>
+      <div class="story-text reveal-left">
+        <span class="section-label">The Craft</span>
+        <h2>Engineering with<br/><span class="gradient-text">precision & soul</span></h2>
+        <p>
+          I specialize in the full stack — not because I lack depth, but because I believe the best 
+          products are built by people who understand both the user's screen and the server's memory. 
+          I've led projects from whiteboard sketch to production deployment, touching every layer in between.
+        </p>
+        <p>
+          My technical philosophy is simple: write code that your future self (and your teammates) 
+          will thank you for. That means clean architecture, meaningful tests, thorough documentation, 
+          and a relentless commitment to performance and accessibility.
+        </p>
+      </div>
+    </div>
+
+    <!-- Row 3: Image left, text right -->
+    <div class="story-row">
+      <div class="story-img-wrap reveal-left">
+        <img src="assets/images/project1.png" alt="Building projects" loading="lazy" style="filter:brightness(0.7) saturate(1.3)" />
+      </div>
+      <div class="story-text reveal-right">
+        <span class="section-label">The Vision</span>
+        <h2>Building toward<br/>a <span class="gradient-text">better web</span></h2>
+        <p>
+          The internet is the most powerful communication medium humanity has ever created — and it 
+          deserves to be beautiful, fast, accessible, and trustworthy. Every project I take on is a 
+          small contribution toward that north star.
+        </p>
+        <p>
+          Beyond code, I'm deeply interested in design systems, open source, developer tooling, and 
+          the intersection of AI with creative engineering. I contribute to the community through 
+          open-source libraries, technical articles, and mentoring aspiring developers.
+        </p>
+        <a href="experience.html" class="btn btn-ghost" data-transition style="margin-top:12px" id="about-exp-btn">
+          See My Journey
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="about-stats">
+  <div class="container">
+    <div class="about-stats-grid">
+      <div class="about-stat-card reveal delay-1">
+        <span class="about-stat-icon">🚀</span>
+        <div class="about-stat-num" data-counter data-target="30" data-suffix="+">0+</div>
+        <div class="about-stat-label">Projects Built</div>
+      </div>
+      <div class="about-stat-card reveal delay-2">
+        <span class="about-stat-icon">☕</span>
+        <div class="about-stat-num" data-counter data-target="4200" data-suffix="+">0+</div>
+        <div class="about-stat-label">Cups of Coffee</div>
+      </div>
+      <div class="about-stat-card reveal delay-3">
+        <span class="about-stat-icon">🌍</span>
+        <div class="about-stat-num" data-counter data-target="12" data-suffix="+">0+</div>
+        <div class="about-stat-label">Countries Reached</div>
+      </div>
+      <div class="about-stat-card reveal delay-4">
+        <span class="about-stat-icon">⭐</span>
+        <div class="about-stat-num" data-counter data-target="480" data-suffix="+">0+</div>
+        <div class="about-stat-label">GitHub Stars</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section id="about-values">
+  <div class="container">
+    <div class="values-header reveal">
+      <span class="section-label" style="justify-content:center;">What Drives Me</span>
+      <h2>Core <span class="gradient-text">Values</span></h2>
+      <p>The principles that guide every decision, every line of code, every collaboration.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal delay-1">
+        <span class="value-icon">⚡</span>
+        <h3 class="value-title">Performance First</h3>
+        <p class="value-desc">Speed is a feature. I obsess over Core Web Vitals, bundle sizes, and runtime efficiency because every millisecond matters to real users.</p>
+      </div>
+      <div class="value-card reveal delay-2">
+        <span class="value-icon">🎨</span>
+        <h3 class="value-title">Design Sensibility</h3>
+        <p class="value-desc">Good code deserves a beautiful interface. I bridge the gap between engineering and design, crafting experiences that are both robust and stunning.</p>
+      </div>
+      <div class="value-card reveal delay-3">
+        <span class="value-icon">♿</span>
+        <h3 class="value-title">Accessibility Always</h3>
+        <p class="value-desc">The web should work for everyone. I build with WCAG standards, semantic HTML, and inclusive design patterns from day one.</p>
+      </div>
+      <div class="value-card reveal delay-4">
+        <span class="value-icon">🔁</span>
+        <h3 class="value-title">Continuous Learning</h3>
+        <p class="value-desc">Technology evolves fast. I dedicate time every week to learning — reading papers, building side projects, and exploring emerging frameworks.</p>
+      </div>
+      <div class="value-card reveal delay-5">
+        <span class="value-icon">🤝</span>
+        <h3 class="value-title">Collaboration</h3>
+        <p class="value-desc">The best software is built by great teams. I communicate clearly, give honest feedback, and lift the engineers around me.</p>
+      </div>
+      <div class="value-card reveal delay-6">
+        <span class="value-icon">🔬</span>
+        <h3 class="value-title">Deep Focus</h3>
+        <p class="value-desc">Complex problems deserve undivided attention. I practice deep work and deliver thorough solutions rather than quick patches.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="about-timeline">
+  <div class="container">
+    <div class="timeline-header reveal">
+      <span class="section-label" style="justify-content:center;">My Journey</span>
+      <h2>A timeline of <span class="gradient-text">growth</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">2018</div>
+          <div class="timeline-title">First Line of Code</div>
+          <div class="timeline-sub">Self-taught Python & HTML</div>
+          <p class="timeline-desc">Built my first web page and fell irrevocably in love with programming. Started with Python scripting and basic HTML/CSS.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">2020</div>
+          <div class="timeline-title">B.Tech Computer Science</div>
+          <div class="timeline-sub">Mumbai University</div>
+          <p class="timeline-desc">Enrolled in Computer Science Engineering. Dove deep into data structures, algorithms, databases, and software architecture.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">2021</div>
+          <div class="timeline-title">First Freelance Project</div>
+          <div class="timeline-sub">E-commerce Website</div>
+          <p class="timeline-desc">Delivered a full e-commerce site for a local retailer. My first real client — and my first lesson in requirements gathering.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">2022</div>
+          <div class="timeline-title">Frontend Internship</div>
+          <div class="timeline-sub">TechNova Solutions, Pune</div>
+          <p class="timeline-desc">Worked on large-scale React applications, contributing to UI components used by 50K+ daily active users.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-title">Open Source Contribution</div>
+          <div class="timeline-sub">MotionUI Kit — 480+ Stars</div>
+          <p class="timeline-desc">Released MotionUI Kit, an animation utility library that gained community traction and 480+ GitHub stars within months.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-title">Full-Stack Developer</div>
+          <div class="timeline-sub">Available for Hire</div>
+          <p class="timeline-desc">Graduated with distinction. Now building full-stack products for clients globally and actively seeking impactful opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-logo">RD</span>
+    <p class="footer-copy">© 2024 Raj Desai. Crafted with passion & precision.</p>
+    <div class="footer-links">
+      <a href="projects.html" data-transition>Projects</a>
+      <a href="skills.html" data-transition>Skills</a>
+      <a href="contact.html" data-transition>Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+<script src="js/about.js"></script>
+</body>
+</html>

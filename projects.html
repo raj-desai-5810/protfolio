@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Raj Desai — Explore full-stack web applications, frontend tools, and open-source contributions." />
+  <title>Projects — Raj Desai</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<div id="page-transition">
+  <div class="pt-panel"></div><div class="pt-panel"></div><div class="pt-panel"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" data-transition>RD</a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link" data-transition>Home</a></li>
+      <li><a href="about.html"      class="nav-link" data-transition>About</a></li>
+      <li><a href="projects.html"   class="nav-link" data-transition>Projects</a></li>
+      <li><a href="skills.html"     class="nav-link" data-transition>Skills</a></li>
+      <li><a href="experience.html" class="nav-link" data-transition>Experience</a></li>
+      <li><a href="contact.html"    class="nav-link nav-cta" data-transition>Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="index.html"      class="nav-link" data-transition>Home</a>
+  <a href="about.html"      class="nav-link" data-transition>About</a>
+  <a href="projects.html"   class="nav-link" data-transition>Projects</a>
+  <a href="skills.html"     class="nav-link" data-transition>Skills</a>
+  <a href="experience.html" class="nav-link" data-transition>Experience</a>
+  <a href="contact.html"    class="nav-link" data-transition>Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label page-hero-label reveal">My Work</span>
+    <h1 class="reveal delay-1">
+      Projects that <span class="gradient-text">matter</span>
+    </h1>
+    <p class="reveal delay-2">From side-projects born at 2am to production systems serving thousands — here's what I've built.</p>
+  </div>
+</section>
+
+<!-- FILTER + GRID -->
+<section id="projects-filter">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="All" id="filter-all">All Projects</button>
+      <button class="filter-btn" data-filter="Full-Stack" id="filter-fullstack">Full-Stack</button>
+      <button class="filter-btn" data-filter="Frontend" id="filter-frontend">Frontend</button>
+      <button class="filter-btn" data-filter="Backend" id="filter-backend">Backend</button>
+      <button class="filter-btn" data-filter="Tools" id="filter-tools">Tools & OSS</button>
+    </div>
+  </div>
+</section>
+
+<section id="projects-grid-section">
+  <div class="container">
+    <div class="projects-grid" id="projects-grid">
+      <!-- Dynamically populated by projects.js -->
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta-banner" style="padding:80px 0;">
+  <div class="container reveal" style="text-align:center">
+    <span class="section-label" style="justify-content:center;margin-bottom:20px;">Collaboration</span>
+    <h2>Have a project in mind?<br/><span class="gradient-text">Let's build it.</span></h2>
+    <p style="color:var(--text-secondary);max-width:480px;margin:0 auto 36px;font-size:1.05rem;">I'm always open to exciting challenges and meaningful collaborations.</p>
+    <a href="contact.html" class="btn btn-primary" data-transition id="proj-contact-btn">
+      Get In Touch
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-logo">RD</span>
+    <p class="footer-copy">© 2024 Raj Desai. Crafted with passion & precision.</p>
+    <div class="footer-links">
+      <a href="about.html" data-transition>About</a>
+      <a href="skills.html" data-transition>Skills</a>
+      <a href="contact.html" data-transition>Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+<script src="js/projects.js"></script>
+</body>
+</html>

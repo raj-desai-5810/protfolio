@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Raj Desai's technical skills — Frontend, Backend, Frameworks, Databases, and DevOps tools." />
+  <title>Skills — Raj Desai</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<div id="page-transition">
+  <div class="pt-panel"></div><div class="pt-panel"></div><div class="pt-panel"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" data-transition>RD</a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link" data-transition>Home</a></li>
+      <li><a href="about.html"      class="nav-link" data-transition>About</a></li>
+      <li><a href="projects.html"   class="nav-link" data-transition>Projects</a></li>
+      <li><a href="skills.html"     class="nav-link" data-transition>Skills</a></li>
+      <li><a href="experience.html" class="nav-link" data-transition>Experience</a></li>
+      <li><a href="contact.html"    class="nav-link nav-cta" data-transition>Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="index.html"      class="nav-link" data-transition>Home</a>
+  <a href="about.html"      class="nav-link" data-transition>About</a>
+  <a href="projects.html"   class="nav-link" data-transition>Projects</a>
+  <a href="skills.html"     class="nav-link" data-transition>Skills</a>
+  <a href="experience.html" class="nav-link" data-transition>Experience</a>
+  <a href="contact.html"    class="nav-link" data-transition>Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label page-hero-label reveal">Technical Arsenal</span>
+    <h1 class="reveal delay-1">Tools of my <span class="gradient-text">craft</span></h1>
+    <p class="reveal delay-2">A curated look at the technologies I've mastered across the full development stack.</p>
+  </div>
+</section>
+
+<!-- TABS -->
+<section id="skills-tabs">
+  <div class="container">
+    <div class="tabs-bar">
+      <button class="tab-btn" data-cat="Frontend" id="tab-frontend">⚛️ Frontend</button>
+      <button class="tab-btn" data-cat="Backend"  id="tab-backend">🔧 Backend</button>
+      <button class="tab-btn" data-cat="Frameworks" id="tab-frameworks">📦 Frameworks</button>
+      <button class="tab-btn" data-cat="Databases" id="tab-databases">🗄️ Databases</button>
+      <button class="tab-btn" data-cat="Tools"    id="tab-tools">🛠️ Tools</button>
+    </div>
+  </div>
+</section>
+
+<!-- SKILL PANELS -->
+<section id="skills-content">
+  <div class="container">
+    <div class="skills-panel" data-cat="Frontend"><!-- populated by skills.js --></div>
+    <div class="skills-panel" data-cat="Backend"><!-- populated by skills.js --></div>
+    <div class="skills-panel" data-cat="Frameworks"><!-- populated by skills.js --></div>
+    <div class="skills-panel" data-cat="Databases"><!-- populated by skills.js --></div>
+    <div class="skills-panel" data-cat="Tools"><!-- populated by skills.js --></div>
+  </div>
+</section>
+
+<!-- TECH CLOUD -->
+<section id="skills-cloud">
+  <div class="container">
+    <h2 class="cloud-title reveal">Full Technology Stack</h2>
+    <p class="cloud-sub reveal delay-1">Every tool I've shipped real products with</p>
+    <div class="tech-cloud">
+      <div class="tech-chip reveal delay-1"><span class="tech-chip-icon">⚛️</span> React.js</div>
+      <div class="tech-chip reveal delay-1"><span class="tech-chip-icon">🟢</span> Vue.js</div>
+      <div class="tech-chip reveal delay-2"><span class="tech-chip-icon">▲</span> Next.js</div>
+      <div class="tech-chip reveal delay-2"><span class="tech-chip-icon">🔷</span> TypeScript</div>
+      <div class="tech-chip reveal delay-3"><span class="tech-chip-icon">💛</span> JavaScript</div>
+      <div class="tech-chip reveal delay-3"><span class="tech-chip-icon">🟩</span> Node.js</div>
+      <div class="tech-chip reveal delay-1"><span class="tech-chip-icon">🐍</span> Python</div>
+      <div class="tech-chip reveal delay-2"><span class="tech-chip-icon">🔵</span> GraphQL</div>
+      <div class="tech-chip reveal delay-3"><span class="tech-chip-icon">🍃</span> MongoDB</div>
+      <div class="tech-chip reveal delay-1"><span class="tech-chip-icon">🐘</span> PostgreSQL</div>
+      <div class="tech-chip reveal delay-2"><span class="tech-chip-icon">🔴</span> Redis</div>
+      <div class="tech-chip reveal delay-3"><span class="tech-chip-icon">🐳</span> Docker</div>
+      <div class="tech-chip reveal delay-1"><span class="tech-chip-icon">☁️</span> AWS</div>
+      <div class="tech-chip reveal delay-2"><span class="tech-chip-icon">🎨</span> Figma</div>
+      <div class="tech-chip reveal delay-3"><span class="tech-chip-icon">🔥</span> Firebase</div>
+      <div class="tech-chip reveal delay-1"><span class="tech-chip-icon">⚡</span> Vite</div>
+      <div class="tech-chip reveal delay-2"><span class="tech-chip-icon">🐙</span> Git</div>
+      <div class="tech-chip reveal delay-3"><span class="tech-chip-icon">🔮</span> Three.js</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFICIENCY BARS -->
+<section id="skills-proficiency">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:64px" class="reveal">
+      <span class="section-label" style="justify-content:center;">Depth & Breadth</span>
+      <h2 style="font-size:clamp(2rem,4vw,3rem);font-weight:700;letter-spacing:-0.025em;margin-bottom:12px;">
+        Core <span class="gradient-text">Proficiency</span>
+      </h2>
+      <p style="color:var(--text-secondary);max-width:480px;margin:0 auto;">
+        Honest self-assessment of my depth in the most critical skills.
+      </p>
+    </div>
+
+    <div class="proficiency-grid">
+      <!-- Left column -->
+      <div>
+        <div class="prof-group-title">Frontend Development</div>
+        <div class="prof-item reveal">
+          <div class="prof-item-header"><span class="prof-item-name">React.js / Next.js</span><span class="prof-item-pct">90%</span></div>
+          <div class="prof-bar"><div class="prof-bar-fill" data-pct="90"></div></div>
+        </div>
+        <div class="prof-item reveal delay-1">
+          <div class="prof-item-header"><span class="prof-item-name">JavaScript / TypeScript</span><span class="prof-item-pct">92%</span></div>
+          <div class="prof-bar"><div class="prof-bar-fill" data-pct="92"></div></div>
+        </div>
+        <div class="prof-item reveal delay-2">
+          <div class="prof-item-header"><span class="prof-item-name">CSS / Animations</span><span class="prof-item-pct">94%</span></div>
+          <div class="prof-bar"><div class="prof-bar-fill" data-pct="94"></div></div>
+        </div>
+        <div class="prof-item reveal delay-3">
+          <div class="prof-item-header"><span class="prof-item-name">Vue.js</span><span class="prof-item-pct">82%</span></div>
+          <div class="prof-bar"><div class="prof-bar-fill" data-pct="82"></div></div>
+        </div>
+      </div>
+      <!-- Right column -->
+      <div>
+        <div class="prof-group-title">Backend & Infrastructure</div>
+        <div class="prof-item reveal">
+          <div class="prof-item-header"><span class="prof-item-name">Node.js / Express</span><span class="prof-item-pct">88%</span></div>
+          <div class="prof-bar"><div class="prof-bar-fill" data-pct="88"></div></div>
+        </div>
+        <div class="prof-item reveal delay-1">
+          <div class="prof-item-header"><span class="prof-item-name">Databases (SQL + NoSQL)</span><span class="prof-item-pct">82%</span></div>
+          <div class="prof-bar"><div class="prof-bar-fill" data-pct="82"></div></div>
+        </div>
+        <div class="prof-item reveal delay-2">
+          <div class="prof-item-header"><span class="prof-item-name">API Design (REST / GraphQL)</span><span class="prof-item-pct">87%</span></div>
+          <div class="prof-bar"><div class="prof-bar-fill" data-pct="87"></div></div>
+        </div>
+        <div class="prof-item reveal delay-3">
+          <div class="prof-item-header"><span class="prof-item-name">DevOps / Cloud (Docker, AWS)</span><span class="prof-item-pct">72%</span></div>
+          <div class="prof-bar"><div class="prof-bar-fill" data-pct="72"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-logo">RD</span>
+    <p class="footer-copy">© 2024 Raj Desai. Crafted with passion & precision.</p>
+    <div class="footer-links">
+      <a href="about.html" data-transition>About</a>
+      <a href="projects.html" data-transition>Projects</a>
+      <a href="contact.html" data-transition>Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+<script src="js/skills.js"></script>
+</body>
+</html>

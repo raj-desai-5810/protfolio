@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Raj Desai — Full-Stack Developer crafting immersive digital experiences with modern web technologies. View my portfolio, projects, and skills." />
+  <title>Raj Desai — Full-Stack Developer & UI Engineer</title>
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+<!-- Noise overlay -->
+<div class="noise-overlay"></div>
+
+<!-- Custom cursor -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- Page transition overlay -->
+<div id="page-transition">
+  <div class="pt-panel"></div>
+  <div class="pt-panel"></div>
+  <div class="pt-panel"></div>
+</div>
+
+<!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" data-transition>RD</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link" data-transition>Home</a></li>
+      <li><a href="about.html"      class="nav-link" data-transition>About</a></li>
+      <li><a href="projects.html"   class="nav-link" data-transition>Projects</a></li>
+      <li><a href="skills.html"     class="nav-link" data-transition>Skills</a></li>
+      <li><a href="experience.html" class="nav-link" data-transition>Experience</a></li>
+      <li><a href="contact.html"    class="nav-link nav-cta" data-transition>Contact</a></li>
+    </ul>
+
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav-mobile" id="nav-mobile">
+  <a href="index.html"      class="nav-link" data-transition>Home</a>
+  <a href="about.html"      class="nav-link" data-transition>About</a>
+  <a href="projects.html"   class="nav-link" data-transition>Projects</a>
+  <a href="skills.html"     class="nav-link" data-transition>Skills</a>
+  <a href="experience.html" class="nav-link" data-transition>Experience</a>
+  <a href="contact.html"    class="nav-link" data-transition>Contact</a>
+</div>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-gradient-bg"></div>
+
+  <div class="hero-content" data-parallax="0.15">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Available for opportunities
+    </div>
+
+    <h1 class="hero-name">Raj Desai</h1>
+
+    <p class="hero-title">
+      <span class="hero-type">Full-Stack Developer</span>
+    </p>
+
+    <p class="hero-desc">
+      I craft immersive digital experiences at the intersection of design and technology — 
+      building scalable applications that feel as good as they perform.
+    </p>
+
+    <div class="hero-cta">
+      <a href="projects.html" class="btn btn-primary" data-transition id="hero-projects-btn">
+        View My Work
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <a href="contact.html" class="btn btn-outline" data-transition id="hero-contact-btn">
+        Let's Talk
+      </a>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-mouse">
+      <div class="scroll-mouse-dot"></div>
+    </div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════ INTRO ═══════════════════════ -->
+<section id="intro">
+  <div class="container">
+    <div class="intro-grid">
+
+      <!-- Image -->
+      <div class="intro-image-wrap reveal-left">
+        <div class="intro-image-glow"></div>
+        <div class="intro-image-frame">
+          <img src="assets/images/raj-avatar.png" alt="Raj Desai — Developer" loading="lazy" />
+        </div>
+        <div class="intro-badge-float">
+          <div class="num" data-counter data-target="3" data-suffix="+">0+</div>
+          <div class="lbl">Years Exp</div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="intro-text reveal-right">
+        <span class="section-label">Who I Am</span>
+        <h2>
+          Building the <span class="gradient-text">future</span>,<br/>
+          one line at a time.
+        </h2>
+        <p>
+          I'm Raj Desai, a passionate Full-Stack Developer based in Mumbai, India. 
+          I specialize in creating high-performance web applications that blend elegant 
+          interfaces with robust engineering.
+        </p>
+        <p>
+          My approach combines technical depth with a strong design sensibility — 
+          I believe that great software isn't just functional, it should be a joy to use.
+        </p>
+
+        <div class="intro-highlights">
+          <div class="intro-highlight-item">React, Vue & Next.js for dynamic frontends</div>
+          <div class="intro-highlight-item">Node.js, Python & GraphQL on the backend</div>
+          <div class="intro-highlight-item">Cloud-native deployments with Docker & AWS</div>
+          <div class="intro-highlight-item">Performance-obsessed, accessibility-first mindset</div>
+        </div>
+
+        <a href="about.html" class="btn btn-ghost" data-transition id="intro-about-btn">
+          My Full Story
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ STATS ═══════════════════════ -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal delay-1">
+        <div class="stat-num" data-counter data-target="3" data-suffix="+">0+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item reveal delay-2">
+        <div class="stat-num" data-counter data-target="30" data-suffix="+">0+</div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div class="stat-item reveal delay-3">
+        <div class="stat-num" data-counter data-target="15" data-suffix="+">0+</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-item reveal delay-4">
+        <div class="stat-num" data-counter data-target="99" data-suffix="%">0%</div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FEATURED PROJECTS ═══════════════════════ -->
+<section id="featured-projects">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-header-left">
+        <span class="section-label">Selected Work</span>
+        <h2>Projects I'm<br/><span class="gradient-text">proud of</span></h2>
+      </div>
+      <a href="projects.html" class="btn btn-outline" data-transition id="view-all-btn">View All Projects</a>
+    </div>
+
+    <div class="featured-grid">
+      <!-- Card 1 -->
+      <article class="featured-card reveal delay-1" data-tilt>
+        <div class="featured-card-img">
+          <img src="assets/images/project1.png" alt="NexaShop" loading="lazy" />
+          <div class="featured-card-img-overlay"></div>
+        </div>
+        <div class="featured-card-body">
+          <div class="featured-card-category">Full-Stack</div>
+          <h3 class="featured-card-title">NexaShop E-Commerce</h3>
+          <p class="featured-card-desc">AI-powered e-commerce platform with real-time inventory and Stripe integration serving 10K+ users.</p>
+          <div class="featured-card-tags">
+            <span class="tag">React</span>
+            <span class="tag tag-cyan">Node.js</span>
+            <span class="tag tag-coral">MongoDB</span>
+          </div>
+          <a href="project-detail.html?id=nexashop" class="featured-card-link" data-transition id="feat-card-1">
+            View Case Study →
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="featured-card reveal delay-2" data-tilt>
+        <div class="featured-card-img">
+          <img src="assets/images/project2.png" alt="AI Vision Dashboard" loading="lazy" />
+          <div class="featured-card-img-overlay"></div>
+        </div>
+        <div class="featured-card-body">
+          <div class="featured-card-category">Frontend</div>
+          <h3 class="featured-card-title">AI Vision Dashboard</h3>
+          <p class="featured-card-desc">Real-time ML analytics dashboard with interactive D3.js visualizations and live WebSocket data streams.</p>
+          <div class="featured-card-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag tag-cyan">Python</span>
+            <span class="tag tag-green">D3.js</span>
+          </div>
+          <a href="project-detail.html?id=aivision" class="featured-card-link" data-transition id="feat-card-2">
+            View Case Study →
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="featured-card reveal delay-3" data-tilt>
+        <div class="featured-card-img">
+          <img src="assets/images/project1.png" alt="TaskFlow Pro" loading="lazy" />
+          <div class="featured-card-img-overlay"></div>
+        </div>
+        <div class="featured-card-body">
+          <div class="featured-card-category">Full-Stack</div>
+          <h3 class="featured-card-title">TaskFlow Pro</h3>
+          <p class="featured-card-desc">Collaborative project management with real-time Kanban boards, Gantt charts, and team analytics.</p>
+          <div class="featured-card-tags">
+            <span class="tag">React</span>
+            <span class="tag tag-cyan">Socket.io</span>
+            <span class="tag tag-coral">PostgreSQL</span>
+          </div>
+          <a href="project-detail.html?id=taskflow" class="featured-card-link" data-transition id="feat-card-3">
+            View Case Study →
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ CTA BANNER ═══════════════════════ -->
+<section id="cta-banner">
+  <div class="container reveal">
+    <span class="section-label" style="justify-content:center;margin-bottom:20px;">Ready to Build?</span>
+    <h2>Let's create something<br/><span class="gradient-text">extraordinary</span> together</h2>
+    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+    <a href="contact.html" class="btn btn-primary" data-transition id="cta-contact-btn">
+      Start a Conversation
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-logo">RD</span>
+    <p class="footer-copy">© 2024 Raj Desai. Crafted with passion & precision.</p>
+    <div class="footer-links">
+      <a href="about.html" data-transition>About</a>
+      <a href="projects.html" data-transition>Projects</a>
+      <a href="contact.html" data-transition>Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Three.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<!-- Scripts -->
+<script src="js/global.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
